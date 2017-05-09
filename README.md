@@ -37,6 +37,36 @@ Sub-generators
  yo nithin-angular:filter
 ```
 
+Gulp tasks
+------------
+* Getting list of available tasks
+```
+ gulp
+```
+
+* Build dev
+```
+ gulp wireindex
+```
+
+* Build prod
+```
+ gulp optimize
+```
+
+* Build dev and launch dev webserver
+```
+ gulp serve-dev
+```
+
+* Build prod and launch prod webserver
+```
+ gulp server-prod
+```
+
+Note - use --verbose for additional logs
+
+
 License
 --------
 MIT License
