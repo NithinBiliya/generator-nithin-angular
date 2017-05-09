@@ -94,6 +94,9 @@ module.exports = class extends Generator {
       }
     );
 
+    mkdirp.sync('src/modules/' + _.snakeCase(this.answers.ngapp) + '/css');
+    mkdirp.sync('src/modules/' + _.snakeCase(this.answers.ngapp) + '/html');
+    mkdirp.sync('src/modules/' + _.snakeCase(this.answers.ngapp) + '/resources');
     mkdirp.sync('src/modules/' + _.snakeCase(this.answers.ngapp) + '/controllers');
 
     this.fs.copyTpl(

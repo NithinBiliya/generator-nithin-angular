@@ -1,6 +1,7 @@
 (function(){
 	angular.module('<%= ngapp %>')
-	  .controller('<%= ngctrl %>', ['$scope', function($scope) {
-		$scope.world="world";
+	  .controller('<%= ngctrl %>', [function() {
+		var vm=this;
+		vm.world="world";
 	  }])
 })();

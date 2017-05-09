@@ -47,6 +47,10 @@ module.exports = class extends Generator {
       }
     );
 
+    mkdirp.sync('src/modules/' + _.snakeCase(this.answers.moduleName) + '/css');
+    mkdirp.sync('src/modules/' + _.snakeCase(this.answers.moduleName) + '/html');
+
+
   }
 
   conflicts() {
